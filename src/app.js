@@ -52,4 +52,8 @@ function checkChat(userstate, message, channel) {
 	if(message === 'q') {
 		client.say(channel, `@${userstate.username} Kissahomie`);
 	}
+
+	if(message === '!dunk'){
+		client.say(channel, 'за 25 рублей делаю ебейший данк под пососи https://youtu.be/_T-4-PfFLEM ')
+	}
 };
