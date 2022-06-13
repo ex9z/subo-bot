@@ -3,15 +3,19 @@ import { bot_username, oauth_token, channel_name, ban_words } from './constants'
 
 
 const options = {
+
     options: { debug: true, messagesLogLevel: "info" },
+	
 	connection: {
 		reconnect: true,
 		secure: true
 	},
+
 	identity: {
 		username: bot_username,
 		password: oauth_token
 	},
+
 	channels: [ channel_name ]
 }
 
