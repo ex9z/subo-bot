@@ -33,6 +33,10 @@ client.on('message', (channel, userstate, message, self) => {
 		client.say(channel, `@${userstate.username}, Kissahomie`);
 	}
 
+	if(message.toLowerCase() === '!song') {
+		client.say(channel, `кющ-баран-кющ гип-мири-мющ дющан мющ кющ-баран-кющ кищ мари-нари эээна охуенный военный унунунум кищ-баран-кищ кющ-бараш куш-бараш вот такая вкусная еда от пророка санбоя кищ-баран-кющ кющ-баран-кющ дашан миклющ баращ кищ-баран-кищ кющ-брамбищ-мунуманащ нулащ кущ-барандущ`);
+	}
+
     checkChat(userstate, message, channel)
 
 });
@@ -47,7 +51,7 @@ function checkChat(usertate, message, channel) {
     ban_word_sent = ban_words.some(bannedwords => message.includes(bannedwords.toLowerCase()))
 
     if (ban_word_sent){
-        client.say(channel, `@${usertate.username}, durak`)
+        client.say(channel, `@${usertate.username}, docCBT`)
         client.deletemessage(channel, usertate.id)
     }
    

@@ -3,3 +3,4 @@ export const channel_name = channel
 export const oauth_token = token
 export const bot_username = bot_name
 export const ban_words = ban
+export const react_words = [ 'когда' ]
