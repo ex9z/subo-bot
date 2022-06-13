@@ -24,12 +24,10 @@ const client = new tmi.Client(options);
 client.connect().catch(console.error);
 
 client.on('message', (channel, userstate, message, self) => {
-
+	
 	if(self) return;
-
-    if (userstate.username === bot_username) return;
-
-
+	
+	if (userstate.username === bot_username) return;
 
 	checkChat(userstate, message, channel)
 });
